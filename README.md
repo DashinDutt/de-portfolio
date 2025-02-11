@@ -1,3 +1,3 @@
-# React App Highlighting my DE Skilset
+# React App Highlighting my DE Skillset
 
 
