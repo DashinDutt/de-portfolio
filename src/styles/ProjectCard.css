@@ -1,0 +1,33 @@
+/* styles.css */
+.image-text-grid {
+    display: flex;
+    border: 3px solid #d6d6d6; /* Optional border */
+    padding: 10px; /* Optional padding */
+    width: max-width; /* Adjust as needed */
+    /* Or use max-width for responsiveness */
+    /* max-width: 900px; */
+}
+
+.text-box {
+    color:rgba(34, 34, 34, 0.938);
+    flex: 1; /* Takes up available space on the left */
+    padding-right: 20px; /* Space between text and image grid */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns - adjust as needed */
+    /* grid-gap is set dynamically via props */
+    flex: 1; /* Takes up available space on the right */
+}
+
+.image-item {
+    width: 100%; /* Ensure images fit their grid cell */
+    overflow: hidden; /* Hide any overflowing image content */
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevent image from affecting layout */
+}

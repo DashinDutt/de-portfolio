@@ -1,0 +1,140 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffffb4; /* Your desired background color */
+}
+
+/* Basic Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; /* Choose a professional font */
+    line-height: 1.6;
+    color: #ffffff; /* Dark gray text color */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #131010; /* Light gray background */
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 100; /* Ensure it's above other content */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center; /* Center the links */
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5f5f5f;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    background-color: #b6b6b6; /* Slightly darker on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3f3f3f; /* Light gray background */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #f0f0f0; /* Slightly lighter text */
+}
+
+.hero .hero-intro {
+    font-size: 1.2rem;
+    margin-bottom: 1rem; /* Add space below */
+}
+
+.hero .hero-subtitle {
+    font-size: 1rem;
+}
+
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.project-card {
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgb(27, 25, 25); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    overflow: hidden; /* Hide content that overflows card */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevent image from affecting layout */
+}
+
+.project-card-content {
+    padding: 1rem;
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    color: #6b6b6b;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #31a4da; /* Darker blue on hover */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* For sticky footer */
+    bottom: 0;
+    width: 100%;
+}
